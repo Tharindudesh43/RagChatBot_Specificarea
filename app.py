@@ -15,8 +15,8 @@ from langchain_core.runnables import RunnablePassthrough
 import gradio as gr
 
 # ========= API Keys =========
-COHERE_API_KEY = os.getenv("ZH6spcBGDJILqDcZQ0yrZd8N4e6F0njJf2B4aFRN")
-GEMINI_API_KEY = os.getenv("AIzaSyCC61HUPMORqWaDJPS6wEkO8ms-QaI4OAE")
+COHERE_API_KEY = os.getenv("COHERE_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 co = cohere.ClientV2(api_key=COHERE_API_KEY)
 from google import generativeai as genai
