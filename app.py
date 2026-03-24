@@ -11,10 +11,9 @@ st.caption("Multimodal document intelligence")
 # ===== COOKIES =====
 cookies = EncryptedCookieManager(
     prefix="rag_pdf_chat", 
-    password="a_super_secret_password"  # change this to something secure
+    password="a_super_secret_password"
 )
 
-# Wait until cookies are ready
 if not cookies.ready():
     st.stop()
 
@@ -76,16 +75,17 @@ col1, col2 = st.columns(2)
 
 with col1:
  if st.button("🧹 Clear Session"):
-    cleanup()  # clear the collection or session data
+    cleanup()  
     st.session_state.answer = ""
     st.session_state.images = []
     
-    # Generate a new session_id and store in cookies/localStorage
+
     new_session_id = str(uuid.uuid4())
     cookies["session_id"] = new_session_id
     cookies.save()
+    st.info(f"Session cleared. New Session ID: {new_session_id}")
 
-    # Force Streamlit to reload the page
+
     st.write(
         f"""
         <script>
