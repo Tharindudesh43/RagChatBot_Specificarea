@@ -1,8 +1,0 @@
-cohere
-google-generativeai
-pillow
-pymupdf
-chromadb
-langchain
-langchain-google-genai
-gradio
