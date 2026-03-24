@@ -1,0 +1,8 @@
+streamlit
+python-dotenv
+langchain
+faiss-cpu
+chromadb
+cohere
+groq
+tiktoken
