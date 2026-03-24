@@ -5,4 +5,4 @@ faiss-cpu
 chromadb
 cohere
 groq
-tiktoken
+tiktoken 
