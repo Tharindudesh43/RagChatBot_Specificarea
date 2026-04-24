@@ -1,3 +1,4 @@
+import utils.session
 import streamlit as st
 import uuid
 from core_functions import process_pdf, search_and_answer, get_collection, cleanup

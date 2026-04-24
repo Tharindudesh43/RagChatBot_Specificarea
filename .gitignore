@@ -1,5 +1,4 @@
 # Env
-.env
 
 # Python
 __pycache__/
@@ -9,6 +8,7 @@ __pycache__/
 vectorstore/
 
 # OS / IDE
-.vscode/
 .idea/
 .DS_Store
+config.bat
+node_modules
